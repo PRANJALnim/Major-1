@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerbClassify</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">HerbClassify</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white">
+        <h1>Welcome to HerbClassify</h1>
+        <p>Discover a world of herbs and plants</p>
+        <button class="btn btn-primary">Get Started</button>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search text-center">
+        <h2>Search Plants</h2>
+        <input type="text" class="form-control d-inline-block w-50" placeholder="Search for plants...">
+        <button class="btn btn-primary mt-3">Search</button>
+    </section>
+
+    <!-- Featured Plant Section -->
+    <section class="featured text-center">
+        <h2>Featured Plant</h2>
+        <div class="plant-card">
+            <img src="images/plant.png" alt="Plant Image" class="img-fluid rounded">
+            <h3>Umbelliferous Herb</h3>
+            <p>Discover the unique properties of this herb.</p>
+            <button class="btn btn-primary">View Details</button>
+        </div>
+    </section>
+
+    <!-- Listed Plants Section -->
+    <section class="plants-list container">
+        <h2>Listed Plants</h2>
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Plant Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Herb 1</td>
+                    <td>Medicinal</td>
+                    <td>Used for healing purposes.</td>
+                </tr>
+                <!-- Add more rows as necessary -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- About Section -->
+    <section class="about text-center">
+        <h2>About HerbClassify</h2>
+        <p>HerbClassify is dedicated to the classification and discovery of herbs and plants. Explore our collection to learn more about the flora around you.</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact text-center">
+        <h2>Contact Us</h2>
+        <form class="w-50 mx-auto">
+            <input type="text" name="name" class="form-control mb-3" placeholder="Name">
+            <input type="email" name="email" class="form-control mb-3" placeholder="Email">
+            <textarea name="message" class="form-control mb-3" placeholder="Message"></textarea>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            max-width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            background-color: #fff;
+            padding: 25px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .card img:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        .card-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #343a40;
+            text-align: center;
+            transition: color 0.3s ease;
+        }
+
+        .card-title:hover {
+            color: #007bff;
+        }
+
+        .card-text {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #6c757d;
+            font-size: 1rem;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-group .btn {
+            width: 48%;
+            padding: 12px 0;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-group .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-group .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        .btn-group .btn-success {
+            background-color: #28a745;
+            border: none;
+        }
+
+        .btn-group .btn-success:hover {
+            background-color: #1e7e34;
+            transform: translateY(-3px);
+        }
+
+        .btn-group .btn i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card text-center">
+        <h5 class="card-title">Result</h5>
+        <img src="https://via.placeholder.com/400x200.png" alt="Uploaded Image">
+        <p class="card-text">DETAILS HERE</p>
+        <div class="btn-group">
+            <button class="btn btn-primary"><i class="fas fa-home"></i> Return to Homepage</button>
+            <button class="btn btn-success"><i class="fas fa-save"></i> Save to Library</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
